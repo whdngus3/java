@@ -1,0 +1,20 @@
+1. AWT -> Swing -> JavaFX 
+   화면 디자인 GUI (Graphic User Interface)
+  - AWT : OS기반 OS마다 화면이 다를 수 있다
+  - Event : 버튼 클릭, 선택
+  - Listener
+  - Swing 순수한 자바로 화면을 구현 OS에 영향이 없음
+    기능을 추가 J : AWT유사한데 클래스들이 앞에 대문자 J가 붙는다
+  - JavaFx : fxml통하여 디자인
+    Stage, Scene개념으로 구현
+ 2. 입출력
+    - InputStream  : 입력되는 통로, byte단위로 처리 안정적, 속도 빠름
+      OutputStream  : 출력되는 통로
+      File~, Byte~, Data~ ....
+      FileInputStream, FileOutputStream
+   -  Reader, Writer : character단위 한글이 안깨짐
+      FileReader, FileWriter
+3. Serialize
+   데이터를 안정적으로 보관, 전송
+   Serialize 구현해야 된다
+   transient : 데이터 저장이 안됨 : 문자는 null, 숫자는 0으로 셋팅

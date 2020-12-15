@@ -1,0 +1,16 @@
+1. Thread
+    실행하는 프로그램 : 프로세스
+    쓰레스 : 프로세스 안에서 작업하는 단위
+2. 멀티Task, 멀티 프로세스 : 하나의 cpu에 작업이 동시에 실행
+    멀티쓰레드 : 하나의 cpu에 동시에 thred가 작업
+3. 자바는 멀티 쓰레드 지원
+    속도가 빠름 : 순서가 필요하면 
+4. extend Thread 
+   run()를 override(재정의) 해서 사용
+5. 다중상속이 안되므로 사용이 있는 클래스는
+    implements Runnable로 클래스를 작성
+    클래스명 객체명 = new 생성자(): Runnable을 구현한 클래스
+    Thread th = new Thread(객체명);
+6. 객체명.start()
+7. Daemon : 메인의 작업이 종료하면 주변 쓰레드 작업도 모두 종료
+   join : 순서가 필요한 경우

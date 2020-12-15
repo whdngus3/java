@@ -1,0 +1,54 @@
+1. for (초기값;  조건 ; 증감) {
+    실행문;
+    ...
+   }
+  증감 : ++, +=, *= => 조건 < 또는 <=
+    "    :     --  => 조건 > 또는 >=
+2. 배열 : 참조형
+  참조형은 초기값이 숫자는 0또는 0.0 문자는 null들어간다.
+  기본형은 초기화 하지 않으면 사용못함 NUllPointException이 발생
+  같은 데이터형을 여러개 한번에 정의하고 생성;
+  int[] a = new int[5];
+  String[] str = new String[10];
+  a[0] = 10; a[1] =20; 대입
+  int[] a1 = {23, 54, 67, 45}; 생성과 대입이 동시에 발생
+  배열에서 확장 for이 사용 가능
+  배열 a1에 데이터 앞에서 부터 하나씩 i에 대입하여 처리한다
+  for (int i : a1) {
+     System.out.println("i = "+ i);
+  }
+3. 2차원 배열
+  int[][] i1 = new int[2][3]; 행을 먼저 생성하고 열을 처리
+  for(int i = 0; i < i1.length; i++) { // 행을 순서대로 처리
+    for (int j=0; j <i[i].length;j++) { // 해당하는 행의 열을 순차적 처리
+       System.out.println(i1[i][j]);  // i1[행][열]
+    }
+ }
+배열명.length : 배열의 갯수
+배열 선언
+  데이터형[] 배열명 = new 데이터형[갯수];
+  개수에 배당하는 것이 인덱스인데 인덱스는 0부터 시작
+for (int[] i2 : i1) { // 행만 순차적으로 i2에 대입 i1[0]=> i1[1]
+   for (int i3 : i2) { // 행에 있는 데이터를 순차적으로 하나씩 i3에 대입
+                           i2[0]=> i2[1] => i2[2]
+      실행문;
+      ...
+   }
+}
+3. 합계를 구할 때 sum = 0;
+   각행의 연산이 끝났을 때 초기화해야 다음 합에 영향을 안 미친다
+
+Rectangle
+  width
+  height
+  void area() {
+    면적 : width * height;
+
+RetangleEx으로 실행
+   box1 : width = 100, height = 100
+   box2 : width = 15, height = 20;
+   box1과 box의 면적을 출력
+
+   
+
+     
